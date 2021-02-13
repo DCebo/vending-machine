@@ -1,0 +1,26 @@
+
+.soda_button {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+    padding: 15px;
+    width: 250px;
+    height: 400px;
+}
+
+.soda_button:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #9e9e9e;
+            box-shadow: inset 0px 0px 5px #a0a0a0;
+     outline: none;
+     box-shadow: 0 0 0 white;
+     margin: 1px 5px 2px 0px;
+}
+
+.soda_button > img {
+    width: 80%;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
