@@ -11,9 +11,6 @@ function Products() {
                         <SodaButton />
                         <SodaButton />
                         <SodaButton />
-                    </div>
-                    <div className="soda_row">
-                        <SodaButton />
                         <SodaButton />
                         <SodaButton />
                     </div>

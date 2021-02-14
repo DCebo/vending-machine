@@ -1,0 +1,35 @@
+.payment_container {
+    display: flex;
+    justify-content: center;
+    background: rgb(175, 175, 175) 50%;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20%;
+    margin: 10px 30px 20px 30px;
+    border: 2px solid #000000;
+}
+
+
+.payment_screen {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    /* height: 15%;   */
+    border: 2px solid #00000080;
+    background: #e5e5e5;
+    border-radius: 15px;
+    box-shadow: 1px 0px 1px #0b1024,0px 1px 1px #222b4d,2px 1px 1px #0b1024,0px 2px 1px #222b4d,2px 2px 1px #0b1024,1px 3px 1px #222b4d,3px 3px 1px #0b1024,2px 4px 1px #222b4d,4px 4px 1px #0b1024,0px 4px 1px #222b4d,0px 4px 1px #0b1024;
+}
+
+.message{
+    margin: 10px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.payment_display {
+}
+
+.coin_group {
+    display: flex;
+}

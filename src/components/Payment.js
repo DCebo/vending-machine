@@ -1,11 +1,29 @@
 import React from 'react'
-import '../css/Payment.ss'
+import '../css/Payment.css'
+import Coin from '../components/Coin'
 
 function Payment() {
     return (
-        <div>
-            
+    <div className="payment_container">
+
+        <div className="payment_display">
+            <div className="payment_screen">
+                <div className="message">
+                    INSERT COINS
+                    {/* INSERT PRICE FROM BACKEND */}
+                </div>
+            </div>     
+
+            <div className="coin_group">
+                <Coin value="0.05"/>
+                <Coin value="0.10"/>
+                <Coin value="0.25"/>
+                <Coin value="1.00"/>
+            </div>
         </div>
+
+
+    </div>
     )
 }
 
