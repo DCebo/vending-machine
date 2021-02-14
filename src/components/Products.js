@@ -2,17 +2,20 @@ import React from 'react'
 import SodaButton from './SodaButton'
 import ProductReturn from './ProductReturn'
 import '../css/Products.css'
+import blue_soda from '../images/blue.png'
+import red_soda from '../images/red.png'
+import purple_soda from '../images/purple.png'
 
 function Products() {
     return (
         <div className="product_container">
                 <div className="soda_rows">
                     <div className="soda_row">
-                        <SodaButton />
-                        <SodaButton />
-                        <SodaButton />
-                        <SodaButton />
-                        <SodaButton />
+                        {/* GET QUANTITY OF SODAS AVAILABLE THEN INSERT IMAGE */}
+                        <SodaButton image={purple_soda}/>
+                        <SodaButton image={blue_soda}/>
+                        <SodaButton image={red_soda}/>
+                        <SodaButton image={blue_soda}/>
                     </div>
                 </div>
 

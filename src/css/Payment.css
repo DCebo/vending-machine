@@ -15,6 +15,7 @@
     justify-content: center;
     padding: 5%;
     /* height: 15%;   */
+    margin-top: 20px;
     border: 2px solid #00000080;
     background: #e5e5e5;
     border-radius: 15px;
@@ -22,7 +23,7 @@
 }
 
 .message{
-    margin: 10px;
+    margin: 20px;
     justify-content: center;
     font-weight: bold;
     font-size: 20px;

@@ -1,9 +1,7 @@
 import React from 'react'
 import '../css/SodaButton.css';
-import soda from '../images/blue.png'
 
-
-function SodaButton(props) {
+function SodaButton({image}) {
     return (
             <button className="soda_button">
                 <div className="soda_name">
@@ -12,7 +10,7 @@ function SodaButton(props) {
                 </div>
 
                 <img className="soda_img" 
-                    src={soda}
+                    src={image}
                     alt="" 
                 />
 
