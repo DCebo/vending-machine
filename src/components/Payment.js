@@ -20,8 +20,17 @@ function Payment() {
                 <Coin value="0.25"/>
                 <Coin value="1.00"/>
             </div>
-        </div>
+            <div className="post_payment">
+                <button className="coin_return_btn">
+                    COIN RETURN
+                </button>
 
+                <button className="coin_change_btn">
+                    CHANGE
+                </button>
+            </div>
+
+        </div>
 
     </div>
     )

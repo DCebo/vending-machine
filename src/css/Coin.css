@@ -3,9 +3,8 @@
     border-radius: 15px;
     padding: 10px;
     width: 20%;  
-    height: 60%;  
     box-shadow: 1px 0px 1px #0b1024,0px 1px 1px #222b4d,2px 1px 1px #0b1024,0px 2px 1px #222b4d,2px 2px 1px #0b1024,1px 3px 1px #222b4d,3px 3px 1px #0b1024,2px 4px 1px #222b4d,4px 4px 1px #0b1024,0px 4px 1px #222b4d,0px 4px 1px #0b1024;
-    margin: 15px;
+    margin: 15px 18px 10px;
 }
 
 .coin_btn:active {

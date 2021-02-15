@@ -9,15 +9,23 @@ function SodaButton({image}) {
                     {/* INSERT NAME FROM BACKEND */}
                 </div>
 
+                <div className="soda_price">
+                    $
+                    {/* INSERT PRICE FROM BACKEND */}
+                </div> 
+
                 <img className="soda_img" 
                     src={image}
                     alt="" 
                 />
 
-                <div className="soda_price">
-                    PRICE
-                    {/* INSERT PRICE FROM BACKEND */}
-                </div> 
+                <div className="soda_stock">
+                    QTY:
+                </div>
+
+                <div className="soda_desc">
+                    DESC:
+                </div>
             </button>       
     );
 }
