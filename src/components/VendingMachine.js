@@ -9,8 +9,8 @@ function VendingMachine() {
     return (
         <div className="vending_machine">
             <div className="vending_machine_label">
-                <img src={logo} alt=""/>
-                <p>vending machine</p>
+                <p>ColaCo Vending Machine</p>
+                {/* <img src={logo} alt=""/> */}
             </div>
 
             <div className="main">

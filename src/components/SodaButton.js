@@ -22,10 +22,6 @@ function SodaButton({image}) {
                 <div className="soda_stock">
                     QTY:
                 </div>
-
-                <div className="soda_desc">
-                    DESC:
-                </div>
             </button>       
     );
 }
