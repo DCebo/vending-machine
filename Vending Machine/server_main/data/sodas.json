@@ -1,0 +1,26 @@
+{
+    "Soda 1": {
+        "Product Name": "Fizz",
+        "Cost": 1,
+        "Quantity": 100,
+        "Description": "An effervescent fruity experience with hints of grape and coriander."
+    },
+    "Soda 2": {
+        "Product Name": "Pop",
+        "Cost": 1,
+        "Quantity": 100,
+        "Description": "An explosion of flavor that will knock your socks off!"
+    },
+    "Soda 3": {
+        "Product Name": "Cola",
+        "Cost": 1,
+        "Quantity": 200,
+        "Description": "A basic no nonsense cola that is the perfect pick me up for any occasion."
+    },
+    "Soda 4": {
+        "Product Name": "Mega Pop",
+        "Cost": 1,
+        "Quantity": 50,
+        "Description": "Not for the faint of heart. So flavorful and so invigorating, it should probably be illegal."
+    }
+}
