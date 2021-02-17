@@ -1,30 +1,19 @@
 # Vending Machine
 ## Project: Create a vending machine utilizing React.js, Node.js, and Express.js
 
-## NOTES:
 -----------------------
-### 1. At launch
-    -Soda varieties: 4
-    -More varieties later in year
-### 2. Soda properties
-    -id: int
-    -Cost: $
-    -Quantity: int
-    -Prices to be adjusted based on sales
-    -Prices to be adjusted during certain time frame
-
 How to Run Project
 ------------------------------------------
-NOTE: Assuming all correct dependencies are installed
-1. Download repo to local folder
-2. Open two instances of terminal
-3. In terminal 1 change into Vending Machine/server directory
-4. Run command:
-    -npm run dev
-5. In terminal 2 change into Vending Machine/client directory
-6. Run command:
-    -npm start
-7. Navigate to http://localhost:3000
+### NOTE: Assuming all correct dependencies are installed
+    1. Download repo to local folder
+    2. Open two instances of terminal
+    3. In terminal 1 change into Vending Machine/server directory
+    4. Run command:
+        -npm run dev
+    5. In terminal 2 change into Vending Machine/client directory
+    6. Run command:
+        -npm start
+    7. Navigate to http://localhost:3000
 
 How to Recreate Project
 ------------------------------------------
@@ -117,6 +106,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Project Notes
+-----------------------
+    1. At launch
+    -Soda varieties: 4
+    -More varieties later in year
+    2. Soda properties
+    -id: int
+    -Cost: $
+    -Quantity: int
+    -Prices to be adjusted based on sales
+    -Prices to be adjusted dependent on need
 
 # DEV TODO:
 -----------------------
