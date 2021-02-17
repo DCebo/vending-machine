@@ -12,6 +12,7 @@ function Payment() {
             <div className="payment_screen">
                 <div className="message">
                     {/* {message} */}
+                    INSERT MONEY
                 </div>
             </div>     
 

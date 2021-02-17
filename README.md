@@ -1,6 +1,5 @@
 # Vending Machine
------------------------
-Project: Create a vending machine utilizing React.js, Node.js, and Express.js
+## Project: Create a vending machine utilizing React.js, Node.js, and Express.js
 
 ## NOTES:
 -----------------------
@@ -29,7 +28,7 @@ NOTE: Assuming all correct dependencies are installed
 
 How to Recreate Project
 ------------------------------------------
-1. Create client side
+### 1. Create client side
     1.1 Install global package to create react apps:
         -npm install -g create-react-app
     1.2 Create React.js app by running following command:
@@ -38,8 +37,7 @@ How to Recreate Project
         -cd client
     1.4 Command to launch React app:
         -npm start
-
-2. Create server side
+### 2. Create server side
     2.1 Install nvm:
         -https://github.com/nvm-sh/nvm
     2.2 Install node lts command:
@@ -125,8 +123,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## 1. client
     -Vending machine UI
     -ACTION: PURCHASE SODA
-        -Reduce quantity in vending machine
-        -Browser downloads JSON file for associated soda
+        -Quantity stock change as needed in vending machine
+        -Payment display functionality
 ## 2. server
     -Main Admin greeting page
     -Admin check status of vending machine
