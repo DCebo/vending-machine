@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Payment.css'
 import Coin from '../components/Coin'
+import AdminButton from '../components/AdminButton'
 
 function Payment() {
     return (
@@ -9,7 +10,7 @@ function Payment() {
         <div className="payment_display">
             <div className="payment_screen">
                 <div className="message">
-                    INSERT COINS
+                    INSERT PAYMENT
                     {/* INSERT PRICE FROM BACKEND */}
                 </div>
             </div>     
@@ -30,6 +31,9 @@ function Payment() {
                 </button>
             </div>
 
+            <div className="admin_btn">
+                <AdminButton />
+            </div>
         </div>
 
     </div>
