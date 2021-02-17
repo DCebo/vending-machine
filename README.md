@@ -15,6 +15,46 @@ How to Run Project
         -npm start
     7. Navigate to http://localhost:3000
 
+How to utilize API
+------------------------------------------
+### In App Display
+    1. Once launched navigate to Admin portal
+    2. Navigate to Operations
+        -List of API requests will be listed along with descriptions
+    3. Perform function with POSTMAN at specific URI
+
+### In README:
+    1. Get all sodas [GET]:
+        Send request to http://localhost:4000/v1/status/sodas
+    
+    2. Get individual soda by ID [GET]:
+        Send soda ID to http://localhost:4000/v1/status/sodas/ID
+    
+    4. Add new soda [POST]:
+        Send JSON to http://localhost:4000/v1/status/sodas/add
+        FORMAT for JSON to POST as follows:
+        ------------------------
+        {
+            "name": "NEW DRINK",
+            "cost": 20,
+            "quantity": 5000,
+            "desc": "DELECTABLE."
+        }
+    
+    4. Update soda by ID and send JSON [PUT]:
+        Send soda ID to http://localhost:4000/v1/status/sodas/put/ID
+        FORMAT for JSON to POST as follows:
+        ------------------------
+        {
+            "name": "NEW NEW DRINK",
+            "cost": 5000,
+            "quantity": 1,
+            "desc": "RARE."
+        }
+    
+    5. Delete soda by ID [DELETE]:
+        Send soda ID to http://localhost:4000/v1/status/sodas/delete/ID
+
 How to Recreate Project
 ------------------------------------------
 ### 1. Create client side
