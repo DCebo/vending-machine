@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var sodaData = require('../data/sodas.json')
+var sodaData = require('../data/sodas2.json')
 
 //! GET status page
-router.get('/status', (req, res, next) => {
+router.get('/v1/status', (req, res, next) => {
   res.render('status', {
     title: 'Vending Machine Status',
     sodaJSON: sodaData, 

@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var statusRouter = require('./routes/status');
 var sodasRouter = require('./routes/sodas');
+var operationsRouter = require('./routes/operations');
 
 var app = express();
 
@@ -17,12 +18,14 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+// app.use(express.raw());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/', statusRouter );
 app.use('/', sodasRouter );
+app.use('/', operationsRouter );
 
 // catch 404 and forward to error handler
 app.use( (req, res, next) => {
