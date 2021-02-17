@@ -2,7 +2,7 @@ import React from 'react'
 import Products from './Products'
 import Payment from './Payment'
 import '../css/VendingMachine.css'
-import logo from '../images/itential-logo-r.svg'
+// import logo from '../images/logo.svg'
 
 
 function VendingMachine() {

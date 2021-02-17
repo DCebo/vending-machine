@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var sodaData = require('../data/sodas2.json');
+var sodaData = require('../data/sodas.json');
 var fs = require('fs');
 
 
