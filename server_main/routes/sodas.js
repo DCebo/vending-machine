@@ -1,55 +1,25 @@
 var express = require('express');
 var router = express.Router();
 var sodaData = require('../data/sodas2.json');
+var fs = require('fs');
 
 
 //! CREATE new soda JSON
+// TODO: Add edge case if array is empty
 router.post('/v1/status/sodas/add', (req, res, next) => { 
   var getLastID = sodaData[sodaData.length - 1]
-  var newJSON = {
-    id:Number(getLastID.id) + 1,
-    name: req.body.name
+  
+  var newSoda = {
+    id: Number(getLastID.id) + 1,
+    name: req.body.name,
+    cost: req.body.cost,
+    quantity: req.body.quantity,
+    desc: req.body.desc
   };
-  res.send(newJSON);
-//   var newSoda = {
-//     id: Number(getLastID.id) + 1,
-//     name: req.body.name,
-//     cost: req.body.cost,
-//     quantity: req.body.quantity,
-//     desc: req.body.desc
-//   };
-//   // sodaData.push(newSoda);
-//   sodaData.push({
-//     "id": Number(getLastID.id) + 1,
-//     "name": "Fizzoooo",
-//     "cost": 10,
-//     "quantity": 100,
-//     "desc": "An effervescent fruity experience with hints of grape and coriander."
-// });
-//   res.json(sodaData)
+
+  sodaData.push(newSoda);
+  res.json(sodaData)
 });
-
-// //! CREATE new soda JSON
-// router.post('/v1/status/sodas/add', (req, res, next) => { 
-//   var arr = JSON.parse(sodaData.keys);
-//   res.send(arr)
-//   fs.readFile(arr, 'utf-8', (err, data) => {
-//     if (err) throw err;
-//     var getLastID = sodaData[sodaData.length - 1]
-//     var newSoda = {
-//       "id": Number(getLastID.id) + 1,
-//       "name": req.body.name,
-//       "cost": req.body.cost,
-//       "quantity": req.body.quantity,
-//       "desc": req.body.desc
-//     };
-
-//     fs.writeFile(sodaData, JSON.stringify(newSoda), 'utf-8', (err) => {
-//       if (err) throw err;
-//       res.send(sodaData);
-//     })
-//   })
-// });
 
 // //! READ all of soda JSON
 router.get('/v1/status/sodas/', (req, res, next) => {
@@ -65,13 +35,37 @@ router.get('/v1/status/sodas/:id', (req, res, next) => {
 });
 
 //! UPDATE soda JSON
-router.put('/v1/status/sodas/:id', (req, res, next) => {
-  res.send(req.params);
+router.put('/v1/status/sodas/put/:id', (req, res, next) => {
+  var getID = req.params.id; 
+  
+  var newSoda = {
+    id: getID,
+    name: req.body.name,
+    cost: req.body.cost,
+    quantity: req.body.quantity,
+    desc: req.body.desc
+  };
+
+  for(var i = 0; i < sodaData.length; i++){
+    if(sodaData[i].id === Number(getID)){
+      sodaData[i] = newSoda;
+    }
+  }
+  res.json(sodaData);
 });
 
 //! DELETE soda JSON
-router.put('/v1/status/sodas/:id', (req, res, next) => {
-  res.send(req.params);
+router.delete('/v1/status/sodas/delete/:id', (req, res, next) => {
+  var getID = req.params.id; 
+  for(var i = 0; i < sodaData.length; i++){
+    if(sodaData[i].id === sodaData.length){
+      sodaData.pop();
+    }
+    else if(sodaData[i].id === Number(getID)){
+      sodaData.splice(i,1)
+    }
+  }
+  res.send(sodaData)
 });
 
 module.exports = router;

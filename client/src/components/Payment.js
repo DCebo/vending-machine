@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 import '../css/Payment.css'
 import Coin from '../components/Coin'
 import AdminButton from '../components/AdminButton'
+import {message} from '../components/SodaButton'
 
 function Payment() {
     return (
@@ -10,8 +11,7 @@ function Payment() {
         <div className="payment_display">
             <div className="payment_screen">
                 <div className="message">
-                    INSERT PAYMENT
-                    {/* INSERT PRICE FROM BACKEND */}
+                    {/* {message} */}
                 </div>
             </div>     
 

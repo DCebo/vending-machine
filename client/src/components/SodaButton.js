@@ -1,10 +1,22 @@
-import React from 'react'
+import React, {Component} from 'react'
 import '../css/SodaButton.css';
+import total from '../scripts/vars'
 
 
 function SodaButton({src, name, qty, cost}) {
+
+    const calc = () => {
+        if (total === 0){
+            var message = "INSERT MONEY";
+        } else {
+            console.log('purchased');
+        }
+    }
+
     return (
-            <button className="soda_button">
+            <button className="soda_button" onClick={(e) => (
+                calc()
+            )}>
                 <div className="soda_name">
                     {name}
                     {/* INSERT NAME FROM BACKEND */}

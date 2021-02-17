@@ -8,5 +8,67 @@
     <body>
         <% include templates/header.ejs %>
         <h1><%= title %></h1>
+
+        <h3>
+            Add new soda:
+        </h3>
+        <p>Send JSON to http://localhost:4000/v1/status/sodas/add</p>
+
+        <!-- !FUTURE IMPLEMENTATION
+        <form action="/action_page.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="cost">Cost:</label>
+            <input type="text" id="cost" name="cost"><br>
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity"><br>
+            <label for="desc">Description:</label>
+            <input type="text" id="desc" name="desc"><br><br>
+            <input type="submit" value="Submit">
+          </form> -->
+
+        <h3>
+            Get individual soda by ID:
+        </h3>
+        <p>Send soda ID to http://localhost:4000/v1/status/sodas/ID</p>
+    
+        <!-- !FUTURE IMPLEMENTATION
+        <form action="/action_page.php">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id"><br><br>
+            <input type="submit" value="Submit">
+        </form> -->
+
+        <h3>
+            Update soda by ID and send JSON:
+        </h3>
+        <p>Send soda ID to http://localhost:4000/v1/status/sodas/put/ID</p>
+        
+        <!-- !FUTURE IMPLEMENTATION
+        <form action="/action_page.php">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id"><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="cost">Cost:</label>
+            <input type="text" id="cost" name="cost"><br>
+            <label for="quantity">Quantity:</label>
+            <input type="text" id="quantity" name="quantity"><br>
+            <label for="desc">Description:</label>
+            <input type="text" id="desc" name="desc"><br><br>
+            <input type="submit" value="Submit">
+        </form> -->
+
+        <h3>
+            Delete soda by ID:
+        </h3>
+        <p>Send soda ID to http://localhost:4000/v1/status/sodas/delete/ID</p>
+
+        <!-- !FUTURE IMPLEMENTATION
+        <form action="/action_page.php">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id"><br><br>
+            <input type="submit" value="Submit">
+        </form> -->
     </body>
 </html>

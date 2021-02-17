@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 import SodaButton from './SodaButton'
 import ProductReturn from './ProductReturn'
 import '../css/Products.css'
 import blue_soda from '../images/blue.png'
 import red_soda from '../images/red.png'
 
-class Products extends React.Component {
+class Products extends Component {
 
     constructor (props) {
         super(props);
@@ -14,7 +14,7 @@ class Products extends React.Component {
           isLoaded: false,
           items: []
         };
-      }
+    }
 
       componentDidMount() {
         fetch("http://localhost:4000/v1/status/sodas")
@@ -38,9 +38,9 @@ class Products extends React.Component {
         var cnt = Math.round(Math.random());
         var obj = items[i];
         if (cnt === 1){
-          buttons.push(<SodaButton src={blue_soda} name={obj.name} qty={obj.quantity} cost={obj.cost}/>);
+          buttons.push(<SodaButton src={blue_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} key={i}/>);
         } else {
-          buttons.push(<SodaButton src={red_soda} name={obj.name} qty={obj.quantity} cost={obj.cost}/>);
+          buttons.push(<SodaButton src={red_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} key={i}/>);
         }
       }
       
