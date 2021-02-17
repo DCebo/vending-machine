@@ -1,15 +1,14 @@
 import React, {Component} from 'react'
 import '../css/SodaButton.css';
-import {total, message, coin_total} from '../scripts/vars'
 
 
 function SodaButton({src, name, qty, cost, data}) {
     //! Function receiving obj sepcific to button 
-    const calc = () => {
-        console.log(data)
-        console.log(data.cost)
-        console.log(total)
-        if (total === 0){
+    const calcAndDisplayMessage = () => {
+        // console.log(data)
+        // console.log(total)
+        if (0 < data.cost){
+            console.log(data.cost)
             var message = "INSERT MONEY";
         } else {
             console.log('purchased');
@@ -18,7 +17,7 @@ function SodaButton({src, name, qty, cost, data}) {
 
     return (
             <button className="soda_button" onClick={(e) => (
-                calc({data})
+                calcAndDisplayMessage(data)
             )}>
                 <div className="soda_name">
                     {/* INSERT NAME FROM BACKEND */}
@@ -45,5 +44,3 @@ function SodaButton({src, name, qty, cost, data}) {
 }
 
 export default SodaButton;
-export {message};
-export {total};

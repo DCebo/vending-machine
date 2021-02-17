@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import SodaButton from './SodaButton'
+import SodaButton from './SodaButton1'
 import ProductReturn from './ProductReturn'
 import '../css/Products.css'
 import blue_soda from '../images/blue.png'
@@ -16,16 +16,16 @@ class Products extends Component {
         };
     }
 
-      componentDidMount() {
-        fetch("http://localhost:4000/v1/status/sodas")
-          .then(res => res.json())
-          .then(json => {
-            this.setState({
-              isLoaded: true,
-              items: json,
-            })
-          });
-      }
+    componentDidMount() {
+      fetch("http://localhost:4000/v1/status/sodas")
+        .then(res => res.json())
+        .then(json => {
+          this.setState({
+            isLoaded: true,
+            items: json,
+          })
+        });
+    }
 
     render () {
       
@@ -33,15 +33,18 @@ class Products extends Component {
       // !Uncomment for debugging
       // console.log(isLoaded);
       // console.log(items);
-       
+      console.log(items)
+      
       var buttons = [];
       for (var i = 0; i < this.state.items.length; i++){
         var cnt = Math.round(Math.random());
         var obj = items[i];
         if (cnt === 1){
-          buttons.push(<SodaButton key={i} src={blue_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} data={obj}/>);
+          // buttons.push(<SodaButton key={i} src={blue_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} data={obj}/>);
+          buttons.push(<SodaButton key={i} src={blue_soda} obj={this.props}/>);
         } else {
-          buttons.push(<SodaButton key={i} src={red_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} data={obj}/>);
+          // buttons.push(<SodaButton key={i} src={red_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} data={obj}/>);
+          buttons.push(<SodaButton key={i} src={red_soda} obj={this.props}/>);
         }
       }
       
