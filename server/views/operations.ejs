@@ -10,7 +10,26 @@
         <h1><%= title %></h1>
 
         <h3>
-            Add new soda:
+            Get all sodas [GET]:
+        </h3>
+        <p>Send request to http://localhost:4000/v1/status/sodas</p>
+
+
+        <h3>
+            Get individual soda by ID [GET]:
+        </h3>
+        <p>Send soda ID to http://localhost:4000/v1/status/sodas/ID</p>
+    
+        <!-- !FUTURE IMPLEMENTATION
+        <form action="/action_page.php">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id"><br><br>
+            <input type="submit" value="Submit">
+        </form> -->
+
+
+        <h3>
+            Add new soda [POST]:
         </h3>
         <p>Send JSON to http://localhost:4000/v1/status/sodas/add</p>
 
@@ -28,19 +47,7 @@
           </form> -->
 
         <h3>
-            Get individual soda by ID:
-        </h3>
-        <p>Send soda ID to http://localhost:4000/v1/status/sodas/ID</p>
-    
-        <!-- !FUTURE IMPLEMENTATION
-        <form action="/action_page.php">
-            <label for="id">ID:</label>
-            <input type="text" id="id" name="id"><br><br>
-            <input type="submit" value="Submit">
-        </form> -->
-
-        <h3>
-            Update soda by ID and send JSON:
+            Update soda by ID and send JSON [PUT]:
         </h3>
         <p>Send soda ID to http://localhost:4000/v1/status/sodas/put/ID</p>
         
@@ -60,7 +67,7 @@
         </form> -->
 
         <h3>
-            Delete soda by ID:
+            Delete soda by ID [DELETE]:
         </h3>
         <p>Send soda ID to http://localhost:4000/v1/status/sodas/delete/ID</p>
 
