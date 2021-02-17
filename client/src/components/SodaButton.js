@@ -5,10 +5,10 @@ import '../css/SodaButton.css';
 function SodaButton({src, name, qty, cost, data}) {
     //! Function receiving obj sepcific to button 
     const calcAndDisplayMessage = () => {
-        // console.log(data)
+        console.log(data)
         // console.log(total)
         if (0 < data.cost){
-            console.log(data.cost)
+            // console.log(data.cost)
             var message = "INSERT MONEY";
         } else {
             console.log('purchased');
