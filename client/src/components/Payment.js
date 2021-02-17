@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import '../css/Payment.css'
 import Coin from '../components/Coin'
 import AdminButton from '../components/AdminButton'
-import {message} from '../components/SodaButton'
+// import {message} from './SodaButton'
+// import {total} from './SodaButton'
 
 function Payment() {
     return (
@@ -30,10 +31,7 @@ function Payment() {
                     CHANGE
                 </button>
             </div>
-
-            <div className="admin_btn">
                 <AdminButton />
-            </div>
         </div>
 
     </div>

@@ -30,17 +30,18 @@ class Products extends Component {
     render () {
       
       var {isLoaded, items} = this.state;
-      console.log(isLoaded);
-      console.log(items);
-      
+      // !Uncomment for debugging
+      // console.log(isLoaded);
+      // console.log(items);
+       
       var buttons = [];
       for (var i = 0; i < this.state.items.length; i++){
         var cnt = Math.round(Math.random());
         var obj = items[i];
         if (cnt === 1){
-          buttons.push(<SodaButton src={blue_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} key={i}/>);
+          buttons.push(<SodaButton key={i} src={blue_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} data={obj}/>);
         } else {
-          buttons.push(<SodaButton src={red_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} key={i}/>);
+          buttons.push(<SodaButton key={i} src={red_soda} name={obj.name} qty={obj.quantity} cost={obj.cost} data={obj}/>);
         }
       }
       
