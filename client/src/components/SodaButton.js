@@ -1,26 +1,27 @@
 import React from 'react'
 import '../css/SodaButton.css';
 
-function SodaButton({image}) {
+
+function SodaButton({src, name, qty, cost}) {
     return (
             <button className="soda_button">
                 <div className="soda_name">
-                    SODA
+                    {name}
                     {/* INSERT NAME FROM BACKEND */}
                 </div>
 
                 <div className="soda_price">
-                    $
+                    $ {cost}
                     {/* INSERT PRICE FROM BACKEND */}
                 </div> 
 
                 <img className="soda_img" 
-                    src={image}
+                    src={src}
                     alt="" 
                 />
 
                 <div className="soda_stock">
-                    QTY:
+                    QTY: {qty}
                 </div>
             </button>       
     );
